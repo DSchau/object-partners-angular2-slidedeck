@@ -1,12 +1,11 @@
-// import { enableProdMode } from '@angular/core';
+import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { SlideDeckModule } from './slide-deck/slide-deck.module';
 
-// // depending on the env mode, enable prod mode or add debugging modules
-// if (process.env.ENV === 'build') {
-//   enableProdMode();
-// }
+if (process.env.ENV === 'production') {
+  enableProdMode();
+}
 
 export function main() {
   return platformBrowserDynamic()
