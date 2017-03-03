@@ -5,6 +5,7 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
+    "prebuild": "del-cli \"dist/**/*\"",
     "build": "webpack --env.production",
     "predeploy": "npm run build",
     "deploy": "ghpages --path dist",
@@ -12,6 +13,8 @@
   },
   "devDependencies": {
     "@types/node": "~7.0.5",
+    "del-cli": "~0.2.1",
+    "ghpages": "~0.0.10",
     "object-partners-presentation": "github:dschau/object-partners-presentation",
     "object-partners-revealjs-theme": "github:dschau/object-partners-revealjs-theme",
     "webpack": "~2.2.1",
@@ -28,6 +31,7 @@
     "@angular/router": "~3.4.9",
     "core-js": "~2.4.1",
     "highlight.js": "~9.9.0",
+    "object-partners-revealjs-theme": "github:dschau/object-partners-revealjs-theme",
     "reflect-metadata": "~0.1.10",
     "reveal.js": "~3.4.1",
     "rxjs": "~5.2.0",
