@@ -1,0 +1,9 @@
+mixin codeBlock(lang)
+  if block
+    pre
+      if lang
+        code(class=lang, data-trim)
+          block
+      else
+        code(data-trim)
+          block

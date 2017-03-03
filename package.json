@@ -1,0 +1,36 @@
+{
+  "name": "slidedeck",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --env.production",
+    "predeploy": "npm run build",
+    "deploy": "ghpages --path dist",
+    "start": "webpack-dev-server --env.development --hot --inline --progress --port 8080 --content-base ./src/public "
+  },
+  "devDependencies": {
+    "@types/node": "~7.0.5",
+    "object-partners-presentation": "github:dschau/object-partners-presentation",
+    "object-partners-revealjs-theme": "github:dschau/object-partners-revealjs-theme",
+    "webpack": "~2.2.1",
+    "webpack-dev-server": "~2.4.1"
+  },
+  "dependencies": {
+    "@angular/common": "~2.4.9",
+    "@angular/compiler": "~2.4.9",
+    "@angular/core": "~2.4.9",
+    "@angular/forms": "~2.4.9",
+    "@angular/http": "~2.4.9",
+    "@angular/platform-browser": "~2.4.9",
+    "@angular/platform-browser-dynamic": "~2.4.9",
+    "@angular/router": "~3.4.9",
+    "core-js": "~2.4.1",
+    "highlight.js": "~9.9.0",
+    "reflect-metadata": "~0.1.10",
+    "reveal.js": "~3.4.1",
+    "rxjs": "~5.2.0",
+    "zone.js": "~0.7.7"
+  }
+}

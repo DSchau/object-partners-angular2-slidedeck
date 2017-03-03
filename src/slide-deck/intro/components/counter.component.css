@@ -1,0 +1,15 @@
+input {
+  border: 1px solid #aaa;
+  padding: 1rem 0.5rem;
+  font-size: 30px;
+  border-radius: 0.25rem;
+}
+
+button {
+  padding: 1rem 0.5rem;
+  color: white;
+  background-color: blue;
+  font-size: 30px;
+  border: none;
+  margin-left: 0.5rem;
+}
